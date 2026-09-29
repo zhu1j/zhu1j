@@ -4,7 +4,9 @@
 
 # Jerry Zhu
 
-<img src="./assets/typing.svg" alt="Java Backend / AI Agent Engineer" width="440">
+<div align="center">
+  <img src="./assets/typing.svg" alt="Java Backend / AI Agent Engineer" width="440">
+</div>
 
 Building reliable backend systems<br>
 and production-ready AI Agents.
