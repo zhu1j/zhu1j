@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 372" width="1140" height="372" role="img" aria-label="Agent runtime reference architecture">
+  <rect width="1140" height="372" fill="#ffffff"/>
+  <style>
+    .nb{fill:#ffffff;stroke:#d7d7d3;stroke-width:1.2}
+    .tt{fill:#3a3a3a;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px;font-weight:500}
+    .ts{fill:#a8a8a5;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px}
+    .lb{fill:#767674;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;letter-spacing:1px}
+    .e{stroke:#d7d7d3;stroke-width:1.2;fill:none}
+    .d{stroke:#d7d7d3;stroke-width:1;stroke-dasharray:3 4;fill:none}
+  </style>
+
+  <text class="lb" x="20" y="34">AGENT SYSTEM · REFERENCE ARCHITECTURE</text>
+
+  <!-- row 1: pipeline -->
+  <rect class="nb" x="20" y="56" width="150" height="72" rx="10"/>
+  <text class="tt" x="95" y="88" text-anchor="middle">Client / SDK</text>
+  <text class="ts" x="95" y="107" text-anchor="middle">request</text>
+
+  <path class="e" d="M170 92 H 244"/><path class="e" d="M238 87 L 244 92 L 238 97"/>
+
+  <rect class="nb" x="250" y="56" width="170" height="72" rx="10"/>
+  <text class="tt" x="335" y="88" text-anchor="middle">API Gateway</text>
+  <text class="ts" x="335" y="107" text-anchor="middle">auth · rate limit</text>
+
+  <path class="e" d="M420 92 H 494"/><path class="e" d="M488 87 L 494 92 L 488 97"/>
+
+  <rect class="nb" x="500" y="56" width="200" height="72" rx="10"/>
+  <text class="tt" x="600" y="88" text-anchor="middle">Agent Runtime</text>
+  <text class="ts" x="600" y="107" text-anchor="middle">orchestration · control flow</text>
+
+  <path class="e" d="M700 92 H 774"/><path class="e" d="M768 87 L 774 92 L 768 97"/>
+
+  <rect class="nb" x="780" y="56" width="150" height="72" rx="10"/>
+  <text class="tt" x="855" y="88" text-anchor="middle">Tools</text>
+  <text class="ts" x="855" y="107" text-anchor="middle">typed · permissioned</text>
+
+  <path class="e" d="M930 92 H 954"/><path class="e" d="M948 87 L 954 92 L 948 97"/>
+
+  <rect class="nb" x="960" y="56" width="160" height="72" rx="10"/>
+  <text class="tt" x="1040" y="88" text-anchor="middle">MCP Servers</text>
+  <text class="ts" x="1040" y="107" text-anchor="middle">external skills</text>
+
+  <!-- bracket -->
+  <path class="d" d="M600 128 V 168 H 225 M600 168 H 825"/>
+  <path class="d" d="M225 168 V 190 M430 168 V 190 M625 168 V 190 M825 168 V 190"/>
+  <text class="lb" x="600" y="163" text-anchor="middle">RUNTIME INTERNALS</text>
+
+  <!-- row 2: internals -->
+  <rect class="nb" x="140" y="192" width="170" height="62" rx="10"/>
+  <text class="tt" x="225" y="220" text-anchor="middle">Planner · Jev</text>
+  <text class="ts" x="225" y="238" text-anchor="middle">decide · score</text>
+
+  <rect class="nb" x="350" y="192" width="160" height="62" rx="10"/>
+  <text class="tt" x="430" y="220" text-anchor="middle">Guardrail</text>
+  <text class="ts" x="430" y="238" text-anchor="middle">safe / unsafe</text>
+
+  <rect class="nb" x="550" y="192" width="150" height="62" rx="10"/>
+  <text class="tt" x="625" y="220" text-anchor="middle">Memory</text>
+  <text class="ts" x="625" y="238" text-anchor="middle">context · compact</text>
+
+  <rect class="nb" x="740" y="192" width="170" height="62" rx="10"/>
+  <text class="tt" x="825" y="220" text-anchor="middle">Evaluator</text>
+  <text class="ts" x="825" y="238" text-anchor="middle">rubric · gate</text>
+
+  <path class="d" d="M225 254 V 284 M430 254 V 284 M625 254 V 284 M825 254 V 284"/>
+
+  <!-- band: observability -->
+  <rect class="nb" x="20" y="284" width="1100" height="56" rx="10"/>
+  <text class="tt" x="570" y="310" text-anchor="middle">Observability</text>
+  <text class="ts" x="570" y="329" text-anchor="middle">metrics · traces · eval gates · cost</text>
+</svg>
