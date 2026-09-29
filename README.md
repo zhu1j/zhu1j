@@ -4,7 +4,7 @@
 
 # Jerry Zhu
 
-<div align="right">
+<div align="margin-right = 25%">
   <img src="./assets/typing.svg" alt="Java Backend / AI Agent Engineer" width="440">
 </div>
 
