@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-label="header banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0a0a"/>
+      <stop offset="0.55" stop-color="#121212"/>
+      <stop offset="1" stop-color="#1b1b1b"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.8" cy="0.15" r="0.9">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="0.6" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="260" fill="url(#bg)"/>
+  <rect width="1200" height="260" fill="url(#grid)"/>
+  <rect width="1200" height="260" fill="url(#glow)"/>
+
+  <!-- architectural line motif -->
+  <g stroke="#ffffff" stroke-opacity="0.10" stroke-width="1" fill="none">
+    <path d="M60 260 V 130 L 150 66 L 240 130 V 260"/>
+    <path d="M900 260 V 104 L 1010 34 L 1120 104 V 260"/>
+    <path d="M300 260 L 400 164 L 500 260"/>
+    <path d="M700 260 L 800 164 L 900 260"/>
+  </g>
+
+  <!-- concentric rings -->
+  <g stroke="#ffffff" stroke-opacity="0.14" stroke-width="1" fill="none">
+    <circle cx="600" cy="128" r="56"/>
+    <circle cx="600" cy="128" r="94"/>
+    <circle cx="600" cy="128" r="94" stroke-dasharray="2 6">
+      <animateTransform attributeName="transform" type="rotate" from="0 600 128" to="360 600 128" dur="40s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- pulsing nodes -->
+  <g fill="#ffffff" fill-opacity="0.55">
+    <circle cx="600" cy="72" r="2.5"><animate attributeName="r" values="2;3.6;2" dur="2.6s" repeatCount="indefinite"/><animate attributeName="fill-opacity" values="0.55;0.95;0.55" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="600" cy="184" r="2.5"><animate attributeName="r" values="2;3.6;2" dur="2.6s" begin="0.6s" repeatCount="indefinite"/><animate attributeName="fill-opacity" values="0.55;0.95;0.55" dur="2.6s" begin="0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="544" cy="128" r="2.5"><animate attributeName="r" values="2;3.6;2" dur="2.6s" begin="1.2s" repeatCount="indefinite"/><animate attributeName="fill-opacity" values="0.55;0.95;0.55" dur="2.6s" begin="1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="656" cy="128" r="2.5"><animate attributeName="r" values="2;3.6;2" dur="2.6s" begin="1.8s" repeatCount="indefinite"/><animate attributeName="fill-opacity" values="0.55;0.95;0.55" dur="2.6s" begin="1.8s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- travelling scan sweep -->
+  <rect x="-260" y="0" width="260" height="260" fill="url(#sweep)">
+    <animate attributeName="x" from="-260" to="1200" dur="6.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- top accent rule -->
+  <rect x="0" y="0" width="1200" height="2" fill="#ffffff" fill-opacity="0.85"/>
+
+  <!-- labels -->
+  <text x="60" y="216" fill="#ffffff" fill-opacity="0.93" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="17" letter-spacing="7" font-weight="600">JERRY ZHU</text>
+  <text x="60" y="239" fill="#ffffff" fill-opacity="0.42" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" letter-spacing="3">JAVA BACKEND / AI AGENT ENGINEER</text>
+  <text x="1140" y="239" text-anchor="end" fill="#ffffff" fill-opacity="0.32" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" letter-spacing="2">RUN THE CODE · RUN THE WORLD</text>
+</svg>
